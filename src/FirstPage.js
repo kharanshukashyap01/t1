@@ -1,21 +1,21 @@
-import HorizontalLinearStepper from "./HorizontalLinearStepper";
+{/*import HorizontalLinearStepper from "./HorizontalLinearStepper";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import databaseImage from './Database.jpg'
-
+*/}
 export default function FirstPage() {
     return (
 
         <div style={{ margin: '0 auto', textAlign: 'center' }}>
                 <>
-                <h2>Select a Data Source</h2>
+                <h2>Let's get started by selecting a Data Source</h2>
                     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 20px' }}>
                         <img
                             src="./snowflake.png"
                             alt="snowflake"
                             style={{ width: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Snowflake clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Snowflake</span>
                         </div>
@@ -24,7 +24,7 @@ export default function FirstPage() {
                             src='./databrick.png'
                             alt="Database"
                             style={{ width: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Databricks clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Databricks</span>
                     </div>
@@ -33,7 +33,7 @@ export default function FirstPage() {
                             src='./bigquery.png'
                             alt="Bigquery"
                             style={{ width: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Bigquery clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Bigquery</span>
                     </div>
@@ -42,7 +42,7 @@ export default function FirstPage() {
                             src='./postgres.png'
                             alt="Postgres"
                             style={{ width: '130px',height: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Postgres clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Postgres</span>
                     </div>
@@ -51,7 +51,7 @@ export default function FirstPage() {
                             src='./redshift.png'
                             alt="Redshift"
                             style={{ width: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Redshift clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Redshift</span>
                     </div>
@@ -64,7 +64,7 @@ export default function FirstPage() {
                             src='./aws s3.png'
                             alt="AWS S3"
                             style={{ width: '100px', height: '100', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('AWS S3 clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>AWS S3</span>
                     </div>
@@ -74,7 +74,7 @@ export default function FirstPage() {
                             src='salesforce.png'
                             alt="Salesforce"
                             style={{ width: '130px', height: '70px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Salesforce clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Salesforce</span>
                     </div>
@@ -84,7 +84,7 @@ export default function FirstPage() {
                             src='excel.png'
                             alt="Excel"
                             style={{ width: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('Excel clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>Excel</span>
                     </div>
@@ -104,7 +104,7 @@ export default function FirstPage() {
                             src='datacloud.png'
                             alt="cloudata"
                             style={{ width: '100px', cursor: 'pointer' }}
-                            onClick={() => console.log('Database clicked')} // Handle click event here
+                            onClick={() => console.log('cloudata clicked')} // Handle click event here
                         />
                         <span style={{ marginTop: '5px' }}>cloudata</span>
                     </div>
