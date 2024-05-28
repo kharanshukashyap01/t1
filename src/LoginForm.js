@@ -29,7 +29,7 @@ const LoginForm = () => {
                     minHeight: '100vh',
                 }}
             >
-                <Typography variant="h4" gutterBottom>
+                <Typography variant="h3" gutterBottom>
                     Login
                 </Typography>
                 <form onSubmit={handleSubmit} style={{ width: '100%' }}>
@@ -57,10 +57,19 @@ const LoginForm = () => {
                         />
                     </Box>
                     <Button
-                        fullWidth
+                        sx={{
+                            width: '50%', // Set the width to half
+                            bgcolor: 'black', // Set background color to black
+                            color: 'white', // Set text color to white
+                            '&:hover': {
+                                bgcolor: 'black', // Keep background color black on hover
+                            },
+                        }}
+                        fullWidth={false} // Ensure fullWidth is not set to true
                         type="submit"
                         variant="contained"
                         color="primary"
+                        
                     >
                         Login
                     </Button>

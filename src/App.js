@@ -25,14 +25,41 @@ const Header = () => {
 
   return (
     <AppBar position="static">
-      <Toolbar sx={{ justifyContent: 'center' }}>
+      <Toolbar sx={{ justifyContent: 'center',  bgcolor: '#F5F5F5' }}>
         <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-          <Button color="inherit" onClick={() => navigate('/fourth')}>Job Run</Button>
-          <Button color="inherit">PII Rule</Button>
-          <Button color="inherit">Approvals</Button>
+          <Button 
+            sx={{
+              bgcolor: 'black',
+              color: 'white',
+              mx: 1, // Add margin between buttons
+              '&:hover': {
+                bgcolor: 'black',
+              },
+            }}
+            onClick={() => navigate('/fourth')}
+          >Job Run
+          </Button>
+
+          <Button sx={{
+            bgcolor: 'black',
+            color: 'white',
+            mx: 1, // Add margin between buttons
+            '&:hover': {
+              bgcolor: 'black',
+            },
+          }}
+          >PII Rule</Button>
+          <Button sx={{
+            bgcolor: 'black',
+            color: 'white',
+            mx: 1, // Add margin between buttons
+            '&:hover': {
+              bgcolor: 'black',
+            },
+          }}>Approvals</Button>
         </Box>
-        <IconButton color="inherit">
-          <Badge badgeContent={4} color="error">
+        <IconButton color="black">
+          <Badge badgeContent={1} color="error">
             <NotificationsIcon />
           </Badge>
         </IconButton>
@@ -44,9 +71,9 @@ const Header = () => {
 function App() {
   return (
     <Router>
-      <Container>
+      <Box sx={{ width: '100%', padding: 0 }}>
         <Header />
-        <Box sx={{ bgcolor: "#cfe8fc", minHeight: '100vh', padding: "30px" }}>
+        <Box sx={{ bgcolor: "#FFFFFF", minHeight: '100vh', padding: "30px" }}>
           <Routes>
             <Route path="/" element={<LoginForm />} />
             <Route path="/landing" element={<LandingPage />} />
@@ -55,7 +82,7 @@ function App() {
           </Routes>
         </Box>
         <Footer />
-      </Container>
+      </Box>
     </Router>
   );
 }

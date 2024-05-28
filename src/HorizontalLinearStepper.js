@@ -60,15 +60,33 @@ export default function HorizontalLinearStepper() {
 
                     <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
                         <Button
-                            color="inherit"
-                            disabled={activeStep === 0}
-                            onClick={handleBack}
-                            sx={{ mr: 1 }}
+                                color="inherit"
+                                disabled={activeStep === 0}
+                                onClick={handleBack}
+                                sx={{
+                                    mr: 1,
+                                    bgcolor: 'black', // Set background color to black
+                                    color: 'white', // Set text color to white
+                                    '&:hover': {
+                                        bgcolor: 'black', // Keep background color black on hover
+                                    },
+                                }}
+                                size="large" // Set the size to large
                         >
                             Back
                         </Button>
                         <Box sx={{ flex: '1 1 auto' }} />
-                        <Button onClick={handleNext}>
+                        <Button 
+                            onClick={handleNext}
+                                sx={{
+                                    bgcolor: 'black', // Set background color to black
+                                    color: 'white', // Set text color to white
+                                    '&:hover': {
+                                        bgcolor: 'black', // Keep background color black on hover
+                                    },
+                                }}
+                                size="large" // Set the size to large
+                        >
                             {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                         </Button>
                     </Box>

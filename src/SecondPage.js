@@ -12,7 +12,7 @@ export default function SecondPage() {
             <React.Fragment>
                 <FormControl defaultValue="" required>
                     <Label>Email</Label>
-                    <StyledInput placeholder="Write your name here" />
+                    <StyledInput placeholder="Enter your email here" />
                     <HelperText />
                 </FormControl>
                 <FormControl defaultValue="" required>

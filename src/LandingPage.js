@@ -23,7 +23,15 @@ function LandingPage() {
                     <Typography variant="h4" gutterBottom>
                         Welcome to the PII scanner
                     </Typography>
-                    <Button
+                    <Button sx={{
+                        width: '100%',
+                        bgcolor: 'black',
+                        color: 'white',
+                        mx: 1, // Add margin between buttons
+                        '&:hover': {
+                            bgcolor: 'black',
+                        },
+                    }}
                         variant="contained"
                         color="primary"
                         size="large"
@@ -36,7 +44,15 @@ function LandingPage() {
                     <Typography variant="h4" gutterBottom>
                         Welcome to the Data Masking
                     </Typography>
-                    <Button variant="contained" color="primary" size="large">
+                    <Button variant="contained" color="primary" size="large"
+                        sx={{
+                            width: '100%', // Set the width to full
+                            bgcolor: 'black', // Set background color to black
+                            color: 'white', // Set text color to white
+                            '&:hover': {
+                                bgcolor: 'black', // Keep background color black on hover
+                            },
+                        }}>
                         Click Here to Get Started
                     </Button>
                 </Box>
